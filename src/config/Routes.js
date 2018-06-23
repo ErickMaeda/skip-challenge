@@ -10,15 +10,30 @@ import RestaurantRoleScreen from '../screens/RestaurantRoleScreen';
 import CourierRoleScreen from '../screens/CourierRoleScreen';
 
 const CourierRoleStack = StackNavigator({ 
-    CourierRoleScreen: CourierRoleScreen
+    CourierRoleScreen: {
+        screen: CourierRoleScreen,
+        navigationOptions: ({ navigation }) => ({
+            title: 'Courier',
+        })
+    }
 });
 
-const CostumerRoleStack = StackNavigator({ 
-    CostumerRoleScreen: CostumerRoleScreen
+const CostumerRoleStack = StackNavigator({
+    CostumerRoleScreen: {
+        screen: CostumerRoleScreen,
+        navigationOptions: ({ navigation }) => ({
+            title: 'Restaurants'
+        })
+    }
 });
 
 const RestaurantRoleStack = StackNavigator({
-    CostumerRoleScreen: CostumerRoleScreen
+    RestaurantRoleScreen: {
+        screen: RestaurantRoleScreen,
+        avigationOptions: ({ navigation }) => ({
+            title: 'Restaurant'
+        })
+    }
 })
 
 const AuthStack = StackNavigator({ 
@@ -31,7 +46,7 @@ export default SwitchNavigator(
         AuthLoading: AuthLoadingScreen,
         CourierRoleScreen: CourierRoleStack,
         CostumerRoleScreen: CostumerRoleStack,
-        RestaurantRoleStack: RestaurantRoleStack,
+        RestaurantRoleScreen: RestaurantRoleStack,
         Auth: AuthStack,
     },
     {
