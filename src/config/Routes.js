@@ -1,3 +1,12 @@
+/**
+ * This file is the high level of the Navigation Component.
+ * 
+ * Like we used react-navigation as the solution of navigator. 
+ * We need to follow all the best practices as show in the documentation
+ * 
+ * https://reactnavigation.org/
+ */
+
 import { 
     StackNavigator, 
     SwitchNavigator ,
