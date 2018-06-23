@@ -9,9 +9,9 @@
   },
   "dependencies": {
     "flow-bin": "^0.67.1",
+    "native-base": "^2.6.1",
     "react": "16.3.1",
     "react-native": "0.55.4",
-    "react-native-firebase": "^4.2.0",
     "react-navigation": "^2.2.5"
   },
   "devDependencies": {

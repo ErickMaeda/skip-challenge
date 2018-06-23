@@ -2,15 +2,17 @@ import {
     StackNavigator, 
     SwitchNavigator 
 } from 'react-navigation';
-import HomeScreen from '../screens/HomeScreen';
-import TodoAddScreen from '../screens/TodoAddScreen';
 import SignInScreen from '../screens/SignInScreen';
 import SignUpScreen from '../screens/SignUpScreen';
 import AuthLoadingScreen from '../screens/AuthLoadingScreen';
+import CostumerRoleScreen from '../screens/CostumerRoleScreen';
+import RestaurantRoleScreen from '../screens/RestaurantRoleScreen';
+import CourierRoleScreen from '../screens/CourierRoleScreen';
 
 const AppStack = StackNavigator({ 
-    Home: HomeScreen,
-    TodoAdd: TodoAddScreen
+    CourierRoleScreen: CourierRoleScreen,
+    CostumerRoleScreen: CostumerRoleScreen,
+    RestaurantRoleScreen: RestaurantRoleScreen
 });
 
 const AuthStack = StackNavigator({ 

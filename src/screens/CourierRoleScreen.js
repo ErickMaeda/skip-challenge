@@ -8,21 +8,27 @@ import {
   View,
   Text
 } from 'react-native';
-import SignUpScreen from './SignUpScreen';
 
-class TodoAddScreen extends React.Component {
+class CourierRoleScreen extends React.Component {
   
+    constructor(props) {
+        super(props);
+
+        console.log('props', props);
+        
+    }
+
     render() {
         return (
             <View style={styles.container}>
-                <Text>Todo Add Screen</Text>
+                <Text>CourierRoleScreen</Text>
                 <StatusBar barStyle="default" />
             </View>
         );
     }
 }
 
-export default SignUpScreen;
+export default CourierRoleScreen;
 
 const styles = StyleSheet.create({
     container: {
