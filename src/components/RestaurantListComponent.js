@@ -32,7 +32,7 @@ class RestaurantListComponent extends React.Component {
 
     renderItem(item) {        
         return (
-            <TouchableOpacity style={styles.containerItem}>
+            <TouchableOpacity style={styles.containerItem} onPress={() => this.props.onPress(item)}>
                 <Card>
                     <CardItem>
                         <Body style={{flexDirection: 'row'}}>

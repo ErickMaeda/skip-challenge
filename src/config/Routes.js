@@ -10,6 +10,7 @@ import CostumerRoleScreen from '../screens/CostumerRoleScreen';
 import RestaurantRoleScreen from '../screens/RestaurantRoleScreen';
 import CourierRoleScreen from '../screens/CourierRoleScreen';
 import OrdersScreen from '../screens/OrdersScreen';
+import RestaurantsScreen from '../screens/RestaurantsScreen';
 import React, { Component } from 'react';
 import { 
     StyleSheet,
@@ -39,6 +40,10 @@ const CostumerRoleStack = StackNavigator({
     OrdersScreen: {
         title: 'Orders',
         screen: OrdersScreen
+    },
+    RestaurantsScreen: {
+        title: 'Restaurants',
+        screen: RestaurantsScreen
     }
 });
 

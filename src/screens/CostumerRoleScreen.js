@@ -30,7 +30,7 @@ class CostumerRoleScreen extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <FloatingActionButton icon={this.getPlusIcon()} onPress={() => console.log('test')}/>
+                <FloatingActionButton icon={this.getPlusIcon()} onPress={() => this.props.navigation.navigate('RestaurantsScreen')}/>
                 <OrderListComponent data={this.state.orders}/>
             </View>
         );
