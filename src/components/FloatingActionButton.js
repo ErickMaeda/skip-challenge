@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#111',
         position: 'absolute',
         bottom: 10,
-        right: 10
+        right: 10,
+        zIndex: 9999
     }
 });

@@ -14,6 +14,7 @@ import {
     getRestaurantList,
     getOrderList
 } from '../config/Api';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 class CostumerRoleScreen extends React.Component {
   
@@ -29,8 +30,28 @@ class CostumerRoleScreen extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <FloatingActionButton onPress={() => console.log('test')}/>
+                <FloatingActionButton icon={this.getPlusIcon()} onPress={() => console.log('test')}/>
                 <OrderListComponent data={this.state.orders}/>
+            </View>
+        );
+    }
+
+    getPlusIcon() {
+        return (
+            <View style={{
+                flex: 1,
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'center'
+            }}>
+                <Icon 
+                    name="add" 
+                    size={30} 
+                    color={'white'} 
+                    style={{
+                        alignSelf: 'center'
+                    }}
+                />
             </View>
         );
     }
