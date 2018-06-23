@@ -9,8 +9,10 @@ import AuthLoadingScreen from '../screens/AuthLoadingScreen';
 import CostumerRoleScreen from '../screens/CostumerRoleScreen';
 import RestaurantRoleScreen from '../screens/RestaurantRoleScreen';
 import CourierRoleScreen from '../screens/CourierRoleScreen';
+import OrdersScreen from '../screens/OrdersScreen';
 import React, { Component } from 'react';
 import { 
+    StyleSheet,
     View,
     TouchableOpacity,
     Text 
@@ -31,13 +33,12 @@ const CostumerRoleStack = StackNavigator({
     CostumerRoleScreen: {
         screen: CostumerRoleScreen,
         navigationOptions: ({ navigation }) => ({
-            title: 'Restaurants',
-            headerRight: (
-                <TouchableOpacity style={{alignSelf: 'center', alignItems: 'center', marginHorizontal: 10, flex: 1}}>
-                    <Text style={{fontSize: 12, color: '#111'}}>ORDERS</Text>
-                </TouchableOpacity>
-            )
+            title: 'Orders'
         })
+    },
+    OrdersScreen: {
+        title: 'Orders',
+        screen: OrdersScreen
     }
 });
 
