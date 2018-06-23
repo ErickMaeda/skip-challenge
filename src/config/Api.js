@@ -5,7 +5,13 @@ export const getRestaurantList = () => {
             name: 'Restaurant 1',
             description: 'Description 1',
             address: 'Address 1',
-            image: 'https://www.designhill.com/uploads/cache/uploads/pagefile/1496308857-463804936592fdc79049fb7-77232378-500x500.png'
+            image: 'https://www.designhill.com/uploads/cache/uploads/pagefile/1496308857-463804936592fdc79049fb7-77232378-500x500.png',
+            dishes: [
+                {
+                    id: 1,
+                    name: 'test',
+                }
+            ]
         },
         {
             id: 2,
@@ -40,6 +46,7 @@ export const getOrderList = () => {
             date: '04/25/2018 12:30',
             dishes: [
                 {
+                    id: 1,
                     name: 'Delicious dish 1',
                     value: 12.90
                 }
@@ -52,10 +59,12 @@ export const getOrderList = () => {
             date: '04/27/2018 12:30',
             dishes: [
                 {
+                    id: 2,
                     name: 'Strawberry',
                     value: 12.90
                 },
                 {
+                    id: 3,
                     name: 'banana',
                     value: 15.90
                 }
@@ -68,6 +77,7 @@ export const getOrderList = () => {
             value: 155.50,
             dishes: [
                 {
+                    id: 4,
                     name: 'Dish dish',
                     value: 12.90
                 }

@@ -10,6 +10,7 @@ import CostumerRoleScreen from '../screens/CostumerRoleScreen';
 import RestaurantRoleScreen from '../screens/RestaurantRoleScreen';
 import CourierRoleScreen from '../screens/CourierRoleScreen';
 import OrdersScreen from '../screens/OrdersScreen';
+import OrderFormScreen from '../screens/OrderFormScreen';
 import RestaurantsScreen from '../screens/RestaurantsScreen';
 import React, { Component } from 'react';
 import { 
@@ -38,19 +39,29 @@ const CostumerRoleStack = StackNavigator({
         })
     },
     OrdersScreen: {
-        title: 'Orders',
-        screen: OrdersScreen
+        screen: OrdersScreen,
+        navigationOptions: ({ navigation }) => ({
+            title: 'Orders'
+        })
     },
     RestaurantsScreen: {
-        title: 'Restaurants',
-        screen: RestaurantsScreen
+        screen: RestaurantsScreen,
+        navigationOptions: ({ navigationOptions }) => {
+            title: 'Restaurants'
+        }
+    },
+    OrderFormScreen: {
+        screen: OrderFormScreen,
+        navigationOptions: ({ navigation }) => ({
+            title: 'New Order'
+        })
     }
 });
 
 const RestaurantRoleStack = StackNavigator({
     RestaurantRoleScreen: {
         screen: RestaurantRoleScreen,
-        avigationOptions: ({ navigation }) => ({
+        navigationOptions: ({ navigation }) => ({
             title: 'Restaurant'
         })
     }
